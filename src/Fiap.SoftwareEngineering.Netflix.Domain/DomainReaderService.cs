@@ -8,12 +8,12 @@ using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions;
 
 namespace Fiap.SoftwareEngineering.Netflix.Domain
 {
-    public class DomainReader<TEntity> : IDomainReader<TEntity>
+    public class DomainReaderService<TEntity> : IDomainReader<TEntity>
         where TEntity : class
     {
         protected IRepositoryReader<TEntity> Repository { get; }
 
-        public DomainReader(IRepositoryReader<TEntity> repository)
+        public DomainReaderService(IRepositoryReader<TEntity> repository)
         {
             Repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }

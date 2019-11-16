@@ -10,7 +10,8 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder
 {
     public static class Extensions
     {
-        public static IApplicationBuilder BuildApiApplication(this IApplicationBuilder app, IApiVersionDescriptionProvider provider, string healthCheckUrl)
+        public static IApplicationBuilder BuildApiApplication(this IApplicationBuilder app,
+            IApiVersionDescriptionProvider provider, string healthCheckUrl)
         {
             app.UseMvcWithDefaultRoute();
             app.UseVersioning();
@@ -22,7 +23,8 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder
             return app;
         }
 
-        public static IHostingEnvironment SetUpEnvironment(this IHostingEnvironment env, IApplicationBuilder applicationBuilder)
+        public static IHostingEnvironment SetUpEnvironment(this IHostingEnvironment env,
+            IApplicationBuilder applicationBuilder)
         {
             if (env.IsDevelopment())
                 applicationBuilder.UseDeveloperExceptionPage();
@@ -44,7 +46,7 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder
         public static IApplicationBuilder UseMiddlewares(this IApplicationBuilder app)
         {
             app.UseMiddleware<ExceptionMiddleware>();
-
+            app.UseMiddleware<NotificationMiddleware>();
             return app;
         }
 
@@ -70,7 +72,8 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder
             return app;
         }
         
-        public static IApplicationBuilder UseSwaggerApi(this IApplicationBuilder app, IApiVersionDescriptionProvider provider)
+        public static IApplicationBuilder UseSwaggerApi(this IApplicationBuilder app,
+            IApiVersionDescriptionProvider provider)
         {
             app.UseSwagger();
             app.UseSwaggerUI(options =>

@@ -11,19 +11,19 @@ namespace Fiap.SoftwareEngineering.Netflix.Middleware
 {
     public class ExceptionMiddleware
     {
-        private readonly RequestDelegate _next;
+        private readonly RequestDelegate Next;
         static readonly ILogger Log = Serilog.Log.ForContext<ExceptionMiddleware>();
 
         public ExceptionMiddleware(RequestDelegate next)
         {
-            _next = next;
+            Next = next;
         }
 
         public async Task Invoke(HttpContext context)
         {
             try
             {
-                await _next(context);
+                await Next(context);
             }
             catch (Exception ex)
             {

@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.AspNetCore\Fiap.SoftwareEngineering.Netflix.AspNetCore.csproj" />
     <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Configuration\Fiap.SoftwareEngineering.Netflix.Configuration.csproj" />
+    <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Domain\Fiap.SoftwareEngineering.Netflix.Domain.csproj" />
     <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Logging\Fiap.SoftwareEngineering.Netflix.Logging.csproj" />
   </ItemGroup>
 

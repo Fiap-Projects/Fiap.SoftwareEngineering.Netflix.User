@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Fiap.SoftwareEngineering.Netflix.Domain
 {
-    public class DomainWriter<TEntity> : IDomainWriter<TEntity>
+    public class DomainWriterService<TEntity> : IDomainWriter<TEntity>
         where TEntity : class
     {
         protected IRepositoryWriter<TEntity> Repository;
         protected IDomainValidator<TEntity> Validator;
 
-        public DomainWriter(IRepositoryWriter<TEntity> repository, IDomainValidator<TEntity> validator)
+        public DomainWriterService(IRepositoryWriter<TEntity> repository, IDomainValidator<TEntity> validator)
         {
             Repository = repository ?? throw new ArgumentNullException(nameof(repository));
             Validator = validator ?? throw new ArgumentNullException(nameof(validator));

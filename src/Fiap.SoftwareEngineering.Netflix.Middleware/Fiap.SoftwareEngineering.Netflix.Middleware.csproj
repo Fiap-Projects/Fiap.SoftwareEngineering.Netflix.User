@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Http\Fiap.SoftwareEngineering.Netflix.Http.csproj" />
+    <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Validation\Fiap.SoftwareEngineering.Netflix.Validation.csproj" />
   </ItemGroup>
 
 </Project>

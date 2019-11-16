@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 using System.Reflection;
 using Fiap.SoftwareEngineering.Netflix.Api.Versioning;
+using Fiap.SoftwareEngineering.Netflix.Validation.Abstractions;
 
 namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.DependencyInjection
 {
@@ -20,6 +21,7 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.DependencyInjection
             services.AddApi();
             services.AddApiVersioning();
             services.AddSwagger(swaggerTitle);
+            services.AddScoped<INotificationContext>();
 
             return services;
         }
