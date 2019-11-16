@@ -27,13 +27,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Ne
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.Logging", "src\Fiap.SoftwareEngineering.Netflix.Logging\Fiap.SoftwareEngineering.Netflix.Logging.csproj", "{382EAEFD-99FA-4846-BD59-24B341E06882}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Http", "src\Fiap.SoftwareEngineering.Netflix.Http\Fiap.SoftwareEngineering.Netflix.Http.csproj", "{2248FA72-7EC2-41FB-A946-17641CD838F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.Http", "src\Fiap.SoftwareEngineering.Netflix.Http\Fiap.SoftwareEngineering.Netflix.Http.csproj", "{2248FA72-7EC2-41FB-A946-17641CD838F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Api", "src\Fiap.SoftwareEngineering.Netflix.Api\Fiap.SoftwareEngineering.Netflix.Api.csproj", "{528738CC-45F2-4BFE-BBA3-F72BF1B83EF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.Api", "src\Fiap.SoftwareEngineering.Netflix.Api\Fiap.SoftwareEngineering.Netflix.Api.csproj", "{528738CC-45F2-4BFE-BBA3-F72BF1B83EF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Middleware", "src\Fiap.SoftwareEngineering.Netflix.Middleware\Fiap.SoftwareEngineering.Netflix.Middleware.csproj", "{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.Middleware", "src\Fiap.SoftwareEngineering.Netflix.Middleware\Fiap.SoftwareEngineering.Netflix.Middleware.csproj", "{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Configuration", "src\Fiap.SoftwareEngineering.Netflix.Configuration\Fiap.SoftwareEngineering.Netflix.Configuration.csproj", "{E1460263-0CF4-460A-9ECB-B7DCB2B131A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.Configuration", "src\Fiap.SoftwareEngineering.Netflix.Configuration\Fiap.SoftwareEngineering.Netflix.Configuration.csproj", "{E1460263-0CF4-460A-9ECB-B7DCB2B131A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Repository", "src\Fiap.SoftwareEngineering.Netflix.Repository\Fiap.SoftwareEngineering.Netflix.Repository.csproj", "{934ECC30-63D0-482A-8D36-F73358003B35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework", "src\Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework\Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework.csproj", "{B32FC378-487E-481E-9420-4D443B5105DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +81,14 @@ Global
 		{E1460263-0CF4-460A-9ECB-B7DCB2B131A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1460263-0CF4-460A-9ECB-B7DCB2B131A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1460263-0CF4-460A-9ECB-B7DCB2B131A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934ECC30-63D0-482A-8D36-F73358003B35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934ECC30-63D0-482A-8D36-F73358003B35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934ECC30-63D0-482A-8D36-F73358003B35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934ECC30-63D0-482A-8D36-F73358003B35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B32FC378-487E-481E-9420-4D443B5105DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B32FC378-487E-481E-9420-4D443B5105DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B32FC378-487E-481E-9420-4D443B5105DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B32FC378-487E-481E-9420-4D443B5105DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +108,8 @@ Global
 		{528738CC-45F2-4BFE-BBA3-F72BF1B83EF3} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
 		{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
 		{E1460263-0CF4-460A-9ECB-B7DCB2B131A7} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
+		{934ECC30-63D0-482A-8D36-F73358003B35} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
+		{B32FC378-487E-481E-9420-4D443B5105DB} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9FDC7372-1187-421E-BEAD-E6A0E616EF40}
