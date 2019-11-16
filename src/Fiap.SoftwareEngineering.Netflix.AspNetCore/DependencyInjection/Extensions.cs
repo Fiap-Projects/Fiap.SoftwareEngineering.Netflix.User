@@ -1,5 +1,7 @@
 ﻿using System.Reflection;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -33,10 +35,11 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.DependencyInjection
 
         public static IServiceCollection AddApiVersioning(this IServiceCollection services)
         {
-            services.AddApiVersioning(p =>
+            services.AddApiVersioning(options =>
             {
-                p.ReportApiVersions = true;
-                p.AssumeDefaultVersionWhenUnspecified = true;
+                options.ReportApiVersions = true;
+                options.AssumeDefaultVersionWhenUnspecified = true;
+                options.ApiVersionReader = new HeaderApiVersionReader("api-version");
             });
 
             services.AddVersionedApiExplorer(p =>
@@ -61,7 +64,15 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.DependencyInjection
                 if (string.IsNullOrEmpty(title))
                     title = Assembly.GetEntryAssembly()?.GetName().Name;
 
-                options.SwaggerDoc("v1", new Info { Title = title, Version = "v1" });
+                var provider = services.BuildServiceProvider()
+                    .GetRequiredService<IApiVersionDescriptionProvider>();
+                
+                foreach ( var description in provider.ApiVersionDescriptions )
+                {
+                    var apiVersion = description.GroupName;
+                    options.SwaggerDoc(apiVersion, new Info { Title = title, Version = apiVersion });
+                }
+
             });
 
             return services;
