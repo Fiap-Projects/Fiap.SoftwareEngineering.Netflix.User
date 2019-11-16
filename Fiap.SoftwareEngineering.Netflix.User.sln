@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Application", "0 - Application", "{DC7819C8-0D58-47EC-BADA-C19D6DCD5FE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{BADB1307-1A57-4DD6-8ED3-1888E2B87509}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Repository", "3 - Repository", "{CC5A9C91-8163-4F25-A4BE-E84F3FE16EAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.User.Domain", "src\Fiap.SoftwareEngineering.Netflix.User.Domain\Fiap.SoftwareEngineering.Netflix.User.Domain.csproj", "{036ABB35-E985-4B86-B247-95B24418B666}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.User.Repository", "src\Fiap.SoftwareEngineering.Netflix.User.Repository\Fiap.SoftwareEngineering.Netflix.User.Repository.csproj", "{E4B45621-FAE3-4FD1-979C-653741109598}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - CrossCutting", "4 - CrossCutting", "{CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{11D18AC9-BE11-4FE6-8FDD-B97331DD59EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - ApplicationService", "1 - ApplicationService", "{76208965-4FA5-4207-A0CE-35AD8E5BB294}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8A52D097-CCAA-4200-A9B5-9B96D02BD38F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.User.Api", "src\Fiap.SoftwareEngineering.Netflix.User.Api\Fiap.SoftwareEngineering.Netflix.User.Api.csproj", "{913DF1E0-D46B-4F59-ACEF-AEB632AC4B37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.AspNetCore", "src\Fiap.SoftwareEngineering.Netflix.AspNetCore\Fiap.SoftwareEngineering.Netflix.AspNetCore.csproj", "{4D95EC06-572A-43D2-8A30-8AD76F51959B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.Logging", "src\Fiap.SoftwareEngineering.Netflix.Logging\Fiap.SoftwareEngineering.Netflix.Logging.csproj", "{382EAEFD-99FA-4846-BD59-24B341E06882}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{036ABB35-E985-4B86-B247-95B24418B666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036ABB35-E985-4B86-B247-95B24418B666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036ABB35-E985-4B86-B247-95B24418B666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036ABB35-E985-4B86-B247-95B24418B666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4B45621-FAE3-4FD1-979C-653741109598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B45621-FAE3-4FD1-979C-653741109598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B45621-FAE3-4FD1-979C-653741109598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B45621-FAE3-4FD1-979C-653741109598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{913DF1E0-D46B-4F59-ACEF-AEB632AC4B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913DF1E0-D46B-4F59-ACEF-AEB632AC4B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913DF1E0-D46B-4F59-ACEF-AEB632AC4B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913DF1E0-D46B-4F59-ACEF-AEB632AC4B37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D95EC06-572A-43D2-8A30-8AD76F51959B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D95EC06-572A-43D2-8A30-8AD76F51959B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D95EC06-572A-43D2-8A30-8AD76F51959B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D95EC06-572A-43D2-8A30-8AD76F51959B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{382EAEFD-99FA-4846-BD59-24B341E06882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{382EAEFD-99FA-4846-BD59-24B341E06882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{382EAEFD-99FA-4846-BD59-24B341E06882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{382EAEFD-99FA-4846-BD59-24B341E06882}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC7819C8-0D58-47EC-BADA-C19D6DCD5FE3} = {11D18AC9-BE11-4FE6-8FDD-B97331DD59EF}
+		{BADB1307-1A57-4DD6-8ED3-1888E2B87509} = {11D18AC9-BE11-4FE6-8FDD-B97331DD59EF}
+		{CC5A9C91-8163-4F25-A4BE-E84F3FE16EAE} = {11D18AC9-BE11-4FE6-8FDD-B97331DD59EF}
+		{036ABB35-E985-4B86-B247-95B24418B666} = {BADB1307-1A57-4DD6-8ED3-1888E2B87509}
+		{E4B45621-FAE3-4FD1-979C-653741109598} = {CC5A9C91-8163-4F25-A4BE-E84F3FE16EAE}
+		{CCA05CEB-6C74-428A-A210-D2A12DBFD0E4} = {11D18AC9-BE11-4FE6-8FDD-B97331DD59EF}
+		{76208965-4FA5-4207-A0CE-35AD8E5BB294} = {11D18AC9-BE11-4FE6-8FDD-B97331DD59EF}
+		{913DF1E0-D46B-4F59-ACEF-AEB632AC4B37} = {DC7819C8-0D58-47EC-BADA-C19D6DCD5FE3}
+		{4D95EC06-572A-43D2-8A30-8AD76F51959B} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
+		{382EAEFD-99FA-4846-BD59-24B341E06882} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FDC7372-1187-421E-BEAD-E6A0E616EF40}
+	EndGlobalSection
+EndGlobal
