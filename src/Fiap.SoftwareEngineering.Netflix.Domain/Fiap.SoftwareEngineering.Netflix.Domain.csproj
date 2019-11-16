@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Repository\Fiap.SoftwareEngineering.Netflix.Repository.csproj" />
+    <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Validation\Fiap.SoftwareEngineering.Netflix.Validation.csproj" />
+  </ItemGroup>
+
+</Project>

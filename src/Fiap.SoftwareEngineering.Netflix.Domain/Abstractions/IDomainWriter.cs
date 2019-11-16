@@ -2,12 +2,10 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Fiap.SoftwareEngineering.Netflix.Repository.Abstractions
+namespace Fiap.SoftwareEngineering.Netflix.Domain.Abstractions
 {
-    public interface IRepositoryWriter<TEntity> where TEntity : class
+    public interface IDomainWriter<TEntity> where TEntity : class
     {
-        IUnitOfWork UnitOfWork { get; }
-
         Task<TEntity> AddAsync(TEntity entity, CancellationToken cancellationToken = default);
         Task AddRangeAsync(IEnumerable<TEntity> entities, CancellationToken cancellationToken = default);
         Task UpdateAsync(TEntity entity, CancellationToken cancellationToken = default);

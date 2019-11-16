@@ -31,25 +31,25 @@ namespace Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework
             CancellationToken cancellationToken = default) =>
             await Context.GetDbSet<TEntity>().AddRangeAsync(entities, cancellationToken);
 
-        public virtual async Task Update(TEntity entity)
+        public virtual async Task UpdateAsync(TEntity entity, CancellationToken cancellationToken = default)
         {
             await Task.Run(() => Context.GetDbSet<TEntity>().Update(entity));
             await Task.CompletedTask;
         }
 
-        public virtual async Task UpdateRange(IEnumerable<TEntity> entities)
+        public virtual async Task UpdateRangeAsync(IEnumerable<TEntity> entities, CancellationToken cancellationToken = default)
         {
             await Task.Run(() => Context.GetDbSet<TEntity>().UpdateRange(entities));
             await Task.CompletedTask;
         }
 
-        public virtual async Task Remove(TEntity entity)
+        public virtual async Task RemoveAsync(TEntity entity, CancellationToken cancellationToken = default)
         {
             await Task.Run(() => Context.GetDbSet<TEntity>().Remove(entity));
             await Task.CompletedTask;
         }
 
-        public virtual async Task RemoveRange(IEnumerable<TEntity> entities)
+        public virtual async Task RemoveRangeAsync(IEnumerable<TEntity> entities, CancellationToken cancellationToken = default)
         {
             await Task.Run(() => Context.GetDbSet<TEntity>().RemoveRange(entities));
             await Task.CompletedTask;
