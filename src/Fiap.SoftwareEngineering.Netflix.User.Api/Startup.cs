@@ -21,13 +21,13 @@ namespace Fiap.SoftwareEngineering.Netflix.User.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddConfiguration<AppSettingsBase>(Configuration);
-            services.AddServices(AppSettingsManager<AppSettingsBase>.Settings.SwaggerTitle);
+            services.AddServices(AppSettingsManager<AppSettingsBase>.Settings?.SwaggerTitle);
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
             env.SetUpEnvironment(app);
-            app.BuildApiApplication(provider, @"/health");
+            app.BuildApiApplication(provider, AppSettingsManager<AppSettingsBase>.Settings?.HealthCheckUrl);
         }
     }
 }
