@@ -1,14 +1,16 @@
-﻿using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions;
-using Fiap.SoftwareEngineering.Netflix.Repository.Abstractions;
-using Fiap.SoftwareEngineering.Netflix.Validation;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions;
+using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions.Services;
+using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions.Validations;
+using Fiap.SoftwareEngineering.Netflix.Repository.Abstractions;
+using Fiap.SoftwareEngineering.Netflix.Validation;
 
-namespace Fiap.SoftwareEngineering.Netflix.Domain
+namespace Fiap.SoftwareEngineering.Netflix.Domain.Services
 {
-    public class DomainWriterService<TEntity> : IDomainWriter<TEntity>
+    public class DomainWriterService<TEntity> : IDomainWriterService<TEntity>
         where TEntity : class
     {
         protected IRepositoryWriter<TEntity> Repository;

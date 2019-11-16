@@ -12,6 +12,7 @@ namespace Fiap.SoftwareEngineering.Netflix.User.Api.Controllers.v1
     [Produces(ContentTypes.ApplicationJson)]
     public class UserController : Controller
     {
+
         [HttpGet]
         public async Task<IActionResult> Get()
         {

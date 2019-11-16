@@ -2,9 +2,9 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Fiap.SoftwareEngineering.Netflix.Domain.Abstractions
+namespace Fiap.SoftwareEngineering.Netflix.Domain.Abstractions.Services
 {
-    public interface IDomainWriter<TEntity> where TEntity : class
+    public interface IDomainWriterService<TEntity> where TEntity : class
     {
         Task<TEntity> AddAsync(TEntity entity, CancellationToken cancellationToken = default);
         Task AddRangeAsync(IEnumerable<TEntity> entities, CancellationToken cancellationToken = default);

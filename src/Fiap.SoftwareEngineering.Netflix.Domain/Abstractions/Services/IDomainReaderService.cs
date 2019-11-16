@@ -4,9 +4,9 @@ using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Fiap.SoftwareEngineering.Netflix.Domain.Abstractions
+namespace Fiap.SoftwareEngineering.Netflix.Domain.Abstractions.Services
 {
-    public interface IDomainReader<TEntity> where TEntity : class
+    public interface IDomainReaderService<TEntity> where TEntity : class
     {
         Task<TEntity> GetAsync(int key);
         Task<TEntity> GetAsync(params object[] keys);

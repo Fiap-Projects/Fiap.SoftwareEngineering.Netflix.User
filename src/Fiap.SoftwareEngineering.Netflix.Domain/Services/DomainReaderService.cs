@@ -1,14 +1,15 @@
-﻿using Fiap.SoftwareEngineering.Netflix.Repository.Abstractions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions;
+using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions.Services;
+using Fiap.SoftwareEngineering.Netflix.Repository.Abstractions;
 
-namespace Fiap.SoftwareEngineering.Netflix.Domain
+namespace Fiap.SoftwareEngineering.Netflix.Domain.Services
 {
-    public class DomainReaderService<TEntity> : IDomainReader<TEntity>
+    public class DomainReaderService<TEntity> : IDomainReaderService<TEntity>
         where TEntity : class
     {
         protected IRepositoryReader<TEntity> Repository { get; }

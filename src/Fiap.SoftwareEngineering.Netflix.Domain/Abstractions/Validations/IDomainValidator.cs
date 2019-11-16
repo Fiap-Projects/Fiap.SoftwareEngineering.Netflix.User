@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Fiap.SoftwareEngineering.Netflix.Validation.Abstractions;
 using FluentValidation;
 
-namespace Fiap.SoftwareEngineering.Netflix.Domain.Abstractions
+namespace Fiap.SoftwareEngineering.Netflix.Domain.Abstractions.Validations
 {
     public interface IDomainValidator<TEntity> where TEntity : class
     {
