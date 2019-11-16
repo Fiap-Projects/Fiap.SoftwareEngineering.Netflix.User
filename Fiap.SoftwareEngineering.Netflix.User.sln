@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Middleware", "src\Fiap.SoftwareEngineering.Netflix.Middleware\Fiap.SoftwareEngineering.Netflix.Middleware.csproj", "{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Configuration", "src\Fiap.SoftwareEngineering.Netflix.Configuration\Fiap.SoftwareEngineering.Netflix.Configuration.csproj", "{E1460263-0CF4-460A-9ECB-B7DCB2B131A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1460263-0CF4-460A-9ECB-B7DCB2B131A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1460263-0CF4-460A-9ECB-B7DCB2B131A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1460263-0CF4-460A-9ECB-B7DCB2B131A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1460263-0CF4-460A-9ECB-B7DCB2B131A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +95,7 @@ Global
 		{2248FA72-7EC2-41FB-A946-17641CD838F7} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
 		{528738CC-45F2-4BFE-BBA3-F72BF1B83EF3} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
 		{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
+		{E1460263-0CF4-460A-9ECB-B7DCB2B131A7} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9FDC7372-1187-421E-BEAD-E6A0E616EF40}

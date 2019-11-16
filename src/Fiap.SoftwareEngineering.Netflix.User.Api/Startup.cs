@@ -1,5 +1,6 @@
 ﻿using Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder;
 using Fiap.SoftwareEngineering.Netflix.AspNetCore.DependencyInjection;
+using Fiap.SoftwareEngineering.Netflix.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
@@ -17,7 +18,11 @@ namespace Fiap.SoftwareEngineering.Netflix.User.Api
             Configuration = configuration;
         }
 
-        public void ConfigureServices(IServiceCollection services) => services.AddServices(@"Fiap Software Engineering Netflix User Api");
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddConfiguration<AppSettingsBase>(Configuration);
+            services.AddServices(AppSettingsManager<AppSettingsBase>.Settings.SwaggerTitle);
+        }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {

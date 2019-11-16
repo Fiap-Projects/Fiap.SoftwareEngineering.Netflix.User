@@ -3,6 +3,7 @@ using Fiap.SoftwareEngineering.Netflix.Api.Versioning;
 using Fiap.SoftwareEngineering.Netflix.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using Microsoft.Extensions.Options;
 
 namespace Fiap.SoftwareEngineering.Netflix.User.Api.Controllers.v1
 {

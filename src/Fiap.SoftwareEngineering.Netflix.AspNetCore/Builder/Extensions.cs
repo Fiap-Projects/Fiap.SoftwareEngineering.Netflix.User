@@ -17,7 +17,7 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder
             app.UseMiddlewares();
             app.AllowOrigins();
             app.UseHealthChecks(healthCheckUrl);
-            app.UseApiDocumentation(provider);
+            app.UseSwaggerApi(provider);
 
             return app;
         }
@@ -70,7 +70,7 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder
             return app;
         }
         
-        public static IApplicationBuilder UseApiDocumentation(this IApplicationBuilder app, IApiVersionDescriptionProvider provider)
+        public static IApplicationBuilder UseSwaggerApi(this IApplicationBuilder app, IApiVersionDescriptionProvider provider)
         {
             app.UseSwagger();
             app.UseSwaggerUI(options =>
