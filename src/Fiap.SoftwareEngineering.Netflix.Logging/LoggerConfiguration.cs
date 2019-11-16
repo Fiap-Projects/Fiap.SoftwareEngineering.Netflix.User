@@ -14,11 +14,10 @@ namespace Fiap.SoftwareEngineering.Netflix.Logging
         public ILogger SetUp(string environmentVariable)
         {
             var environment = Environment.GetEnvironmentVariable(environmentVariable);
-
             var logConfig = new Serilog.LoggerConfiguration()
                 .MinimumLevel.Debug()
-                .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
-                .MinimumLevel.Override("System", LogEventLevel.Warning)
+                .MinimumLevel.Override(LogSource.Microsoft, LogEventLevel.Information)
+                .MinimumLevel.Override(LogSource.System, LogEventLevel.Warning)
                 .Enrich.FromLogContext()
                 .Enrich.WithExceptionDetails()
                 .Enrich.WithMachineName();

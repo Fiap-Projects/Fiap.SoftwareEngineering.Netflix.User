@@ -1,4 +1,4 @@
-﻿using Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder.Middleware;
+﻿using Fiap.SoftwareEngineering.Netflix.Middleware;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -10,13 +10,13 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder
 {
     public static class Extensions
     {
-        public static IApplicationBuilder BuildApiApplication(this IApplicationBuilder app, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
+        public static IApplicationBuilder BuildApiApplication(this IApplicationBuilder app, IApiVersionDescriptionProvider provider, string healthCheckUrl)
         {
             app.UseMvcWithDefaultRoute();
             app.UseVersioning();
             app.UseMiddlewares();
             app.AllowOrigins();
-            app.UseHealthChecks();
+            app.UseHealthChecks(healthCheckUrl);
             app.UseApiDocumentation(provider);
 
             return app;
@@ -59,9 +59,9 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder
             return app;
         }
 
-        public static IApplicationBuilder UseHealthChecks(this IApplicationBuilder app)
+        public static IApplicationBuilder UseHealthChecks(this IApplicationBuilder app, string url)
         {
-            app.UseHealthChecks("/health", new HealthCheckOptions
+            app.UseHealthChecks(url, new HealthCheckOptions
             {
                 Predicate = _ => true,
                 ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse

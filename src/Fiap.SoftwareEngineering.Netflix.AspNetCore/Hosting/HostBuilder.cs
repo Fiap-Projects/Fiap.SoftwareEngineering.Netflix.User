@@ -15,7 +15,7 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.Hosting
             where TStartup : class
         {
             var logger = Logging.LoggerConfiguration.CreateLogger(EnvironmentVariable.AspnetcoreEnvironment);
-            logger.Information("Starting host...");
+            logger.Information(LogMessages.StartingHost);
 
             try
             {
@@ -33,7 +33,7 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.Hosting
             }
             catch (Exception ex)
             {
-                logger.Fatal(ex, "Web terminated unexpectedly.");
+                logger.Fatal(ex, LogMessages.TerminatedUnexpectedly);
                 return 1;
             }
             finally

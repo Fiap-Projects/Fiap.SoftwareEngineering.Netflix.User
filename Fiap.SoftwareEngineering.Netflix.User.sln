@@ -27,6 +27,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Ne
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.Logging", "src\Fiap.SoftwareEngineering.Netflix.Logging\Fiap.SoftwareEngineering.Netflix.Logging.csproj", "{382EAEFD-99FA-4846-BD59-24B341E06882}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Http", "src\Fiap.SoftwareEngineering.Netflix.Http\Fiap.SoftwareEngineering.Netflix.Http.csproj", "{2248FA72-7EC2-41FB-A946-17641CD838F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Api", "src\Fiap.SoftwareEngineering.Netflix.Api\Fiap.SoftwareEngineering.Netflix.Api.csproj", "{528738CC-45F2-4BFE-BBA3-F72BF1B83EF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Middleware", "src\Fiap.SoftwareEngineering.Netflix.Middleware\Fiap.SoftwareEngineering.Netflix.Middleware.csproj", "{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +59,18 @@ Global
 		{382EAEFD-99FA-4846-BD59-24B341E06882}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{382EAEFD-99FA-4846-BD59-24B341E06882}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{382EAEFD-99FA-4846-BD59-24B341E06882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2248FA72-7EC2-41FB-A946-17641CD838F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2248FA72-7EC2-41FB-A946-17641CD838F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2248FA72-7EC2-41FB-A946-17641CD838F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2248FA72-7EC2-41FB-A946-17641CD838F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{528738CC-45F2-4BFE-BBA3-F72BF1B83EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528738CC-45F2-4BFE-BBA3-F72BF1B83EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528738CC-45F2-4BFE-BBA3-F72BF1B83EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528738CC-45F2-4BFE-BBA3-F72BF1B83EF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +86,9 @@ Global
 		{913DF1E0-D46B-4F59-ACEF-AEB632AC4B37} = {DC7819C8-0D58-47EC-BADA-C19D6DCD5FE3}
 		{4D95EC06-572A-43D2-8A30-8AD76F51959B} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
 		{382EAEFD-99FA-4846-BD59-24B341E06882} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
+		{2248FA72-7EC2-41FB-A946-17641CD838F7} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
+		{528738CC-45F2-4BFE-BBA3-F72BF1B83EF3} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
+		{4BAA1C8D-D345-4B28-B83D-C3FD884CC4AE} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9FDC7372-1187-421E-BEAD-E6A0E616EF40}

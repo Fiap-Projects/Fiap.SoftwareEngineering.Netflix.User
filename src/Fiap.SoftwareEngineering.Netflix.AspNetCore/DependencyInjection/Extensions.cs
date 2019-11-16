@@ -1,9 +1,10 @@
-﻿using System.Reflection;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
+using System.Reflection;
+using Fiap.SoftwareEngineering.Netflix.Api.Versioning;
 
 namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.DependencyInjection
 {
@@ -39,12 +40,12 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.DependencyInjection
             {
                 options.ReportApiVersions = true;
                 options.AssumeDefaultVersionWhenUnspecified = true;
-                options.ApiVersionReader = new HeaderApiVersionReader("api-version");
+                options.ApiVersionReader = new HeaderApiVersionReader(Headers.Version);
             });
 
             services.AddVersionedApiExplorer(p =>
             {
-                p.GroupNameFormat = @"'v'VVV";
+                p.GroupNameFormat = Headers.VersionPattern;
                 p.SubstituteApiVersionInUrl = true;
             });
 

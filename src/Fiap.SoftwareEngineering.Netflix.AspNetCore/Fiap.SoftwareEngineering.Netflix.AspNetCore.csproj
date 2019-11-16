@@ -28,7 +28,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Api\Fiap.SoftwareEngineering.Netflix.Api.csproj" />
     <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Logging\Fiap.SoftwareEngineering.Netflix.Logging.csproj" />
+    <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Middleware\Fiap.SoftwareEngineering.Netflix.Middleware.csproj" />
   </ItemGroup>
 
 </Project>

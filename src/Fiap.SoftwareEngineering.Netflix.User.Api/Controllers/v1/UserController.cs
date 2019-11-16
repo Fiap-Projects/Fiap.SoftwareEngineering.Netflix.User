@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Fiap.SoftwareEngineering.Netflix.Api.Routing;
+using Fiap.SoftwareEngineering.Netflix.Api.Versioning;
+using Fiap.SoftwareEngineering.Netflix.Http;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System.Collections.Generic;
 
 namespace Fiap.SoftwareEngineering.Netflix.User.Api.Controllers.v1
 {
     [ApiController]
-    [ApiVersion("1")]
-    [Route("v{version:apiVersion}/[controller]")]
-    [Produces("application/json")]
+    [ApiVersion(Versions.V1)]
+    [Route(RoutePattern.VersionedRoute)]
+    [Produces(ContentTypes.ApplicationJson)]
     public class UserController : Controller
     {
         [HttpGet]

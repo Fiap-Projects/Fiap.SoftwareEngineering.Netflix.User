@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Net;
 using System.Threading.Tasks;
+using Fiap.SoftwareEngineering.Netflix.Http;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Serilog;
 
-namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder.Middleware
+namespace Fiap.SoftwareEngineering.Netflix.Middleware
 {
     public class ExceptionMiddleware
     {
@@ -26,7 +27,7 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder.Middleware
             }
             catch (Exception ex)
             {
-                context.Response.ContentType = "application/json";
+                context.Response.ContentType = ContentTypes.ApplicationJson;
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
                 Log.Error(ex.Message, ex);
