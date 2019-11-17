@@ -3,21 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Application", "0 - Application", "{DC7819C8-0D58-47EC-BADA-C19D6DCD5FE3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{BADB1307-1A57-4DD6-8ED3-1888E2B87509}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Repository", "3 - Repository", "{CC5A9C91-8163-4F25-A4BE-E84F3FE16EAE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{DC7819C8-0D58-47EC-BADA-C19D6DCD5FE3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.User.Domain", "src\Fiap.SoftwareEngineering.Netflix.User.Domain\Fiap.SoftwareEngineering.Netflix.User.Domain.csproj", "{036ABB35-E985-4B86-B247-95B24418B666}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.User.Repository", "src\Fiap.SoftwareEngineering.Netflix.User.Repository\Fiap.SoftwareEngineering.Netflix.User.Repository.csproj", "{E4B45621-FAE3-4FD1-979C-653741109598}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - CrossCutting", "4 - CrossCutting", "{CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{11D18AC9-BE11-4FE6-8FDD-B97331DD59EF}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - ApplicationService", "1 - ApplicationService", "{76208965-4FA5-4207-A0CE-35AD8E5BB294}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8A52D097-CCAA-4200-A9B5-9B96D02BD38F}"
 EndProject
@@ -35,13 +29,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Ne
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.Configuration", "src\Fiap.SoftwareEngineering.Netflix.Configuration\Fiap.SoftwareEngineering.Netflix.Configuration.csproj", "{E1460263-0CF4-460A-9ECB-B7DCB2B131A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Repository", "src\Fiap.SoftwareEngineering.Netflix.Repository\Fiap.SoftwareEngineering.Netflix.Repository.csproj", "{934ECC30-63D0-482A-8D36-F73358003B35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.Repository", "src\Fiap.SoftwareEngineering.Netflix.Repository\Fiap.SoftwareEngineering.Netflix.Repository.csproj", "{934ECC30-63D0-482A-8D36-F73358003B35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework", "src\Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework\Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework.csproj", "{B32FC378-487E-481E-9420-4D443B5105DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework", "src\Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework\Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework.csproj", "{B32FC378-487E-481E-9420-4D443B5105DB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.Validation", "src\Fiap.SoftwareEngineering.Netflix.Validation\Fiap.SoftwareEngineering.Netflix.Validation.csproj", "{58360CB9-BC1F-45C5-BEAA-0871C38776CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.SoftwareEngineering.Netflix.Domain", "src\Fiap.SoftwareEngineering.Netflix.Domain\Fiap.SoftwareEngineering.Netflix.Domain.csproj", "{E6359575-5685-4C1C-8358-08388575C8DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.Domain", "src\Fiap.SoftwareEngineering.Netflix.Domain\Fiap.SoftwareEngineering.Netflix.Domain.csproj", "{E6359575-5685-4C1C-8358-08388575C8DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.SoftwareEngineering.Netflix.User.ApplicationService", "src\Fiap.SoftwareEngineering.Netflix.User.ApplicationService\Fiap.SoftwareEngineering.Netflix.User.ApplicationService.csproj", "{31D6ACBB-8504-4332-B874-704D73A0C7B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,18 +97,19 @@ Global
 		{E6359575-5685-4C1C-8358-08388575C8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6359575-5685-4C1C-8358-08388575C8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6359575-5685-4C1C-8358-08388575C8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31D6ACBB-8504-4332-B874-704D73A0C7B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D6ACBB-8504-4332-B874-704D73A0C7B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D6ACBB-8504-4332-B874-704D73A0C7B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D6ACBB-8504-4332-B874-704D73A0C7B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DC7819C8-0D58-47EC-BADA-C19D6DCD5FE3} = {11D18AC9-BE11-4FE6-8FDD-B97331DD59EF}
-		{BADB1307-1A57-4DD6-8ED3-1888E2B87509} = {11D18AC9-BE11-4FE6-8FDD-B97331DD59EF}
-		{CC5A9C91-8163-4F25-A4BE-E84F3FE16EAE} = {11D18AC9-BE11-4FE6-8FDD-B97331DD59EF}
-		{036ABB35-E985-4B86-B247-95B24418B666} = {BADB1307-1A57-4DD6-8ED3-1888E2B87509}
-		{E4B45621-FAE3-4FD1-979C-653741109598} = {CC5A9C91-8163-4F25-A4BE-E84F3FE16EAE}
+		{036ABB35-E985-4B86-B247-95B24418B666} = {DC7819C8-0D58-47EC-BADA-C19D6DCD5FE3}
+		{E4B45621-FAE3-4FD1-979C-653741109598} = {DC7819C8-0D58-47EC-BADA-C19D6DCD5FE3}
 		{CCA05CEB-6C74-428A-A210-D2A12DBFD0E4} = {11D18AC9-BE11-4FE6-8FDD-B97331DD59EF}
-		{76208965-4FA5-4207-A0CE-35AD8E5BB294} = {11D18AC9-BE11-4FE6-8FDD-B97331DD59EF}
 		{913DF1E0-D46B-4F59-ACEF-AEB632AC4B37} = {DC7819C8-0D58-47EC-BADA-C19D6DCD5FE3}
 		{4D95EC06-572A-43D2-8A30-8AD76F51959B} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
 		{382EAEFD-99FA-4846-BD59-24B341E06882} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
@@ -124,6 +121,7 @@ Global
 		{B32FC378-487E-481E-9420-4D443B5105DB} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
 		{58360CB9-BC1F-45C5-BEAA-0871C38776CC} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
 		{E6359575-5685-4C1C-8358-08388575C8DF} = {CCA05CEB-6C74-428A-A210-D2A12DBFD0E4}
+		{31D6ACBB-8504-4332-B874-704D73A0C7B2} = {DC7819C8-0D58-47EC-BADA-C19D6DCD5FE3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9FDC7372-1187-421E-BEAD-E6A0E616EF40}

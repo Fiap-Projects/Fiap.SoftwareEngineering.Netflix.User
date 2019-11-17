@@ -21,7 +21,6 @@ namespace Fiap.SoftwareEngineering.Netflix.AspNetCore.DependencyInjection
             services.AddApi();
             services.AddApiVersioning();
             services.AddSwagger(swaggerTitle);
-            services.AddScoped<INotificationContext>();
 
             return services;
         }

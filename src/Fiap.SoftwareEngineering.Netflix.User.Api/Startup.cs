@@ -1,6 +1,11 @@
-﻿using Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder;
+﻿using System;
+using Fiap.SoftwareEngineering.Netflix.AspNetCore.Builder;
 using Fiap.SoftwareEngineering.Netflix.AspNetCore.DependencyInjection;
+using Fiap.SoftwareEngineering.Netflix.AspNetCore.Hosting;
 using Fiap.SoftwareEngineering.Netflix.Configuration;
+using Fiap.SoftwareEngineering.Netflix.Domain;
+using Fiap.SoftwareEngineering.Netflix.Repository;
+using Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
@@ -22,6 +27,12 @@ namespace Fiap.SoftwareEngineering.Netflix.User.Api
         {
             services.AddConfiguration<AppSettingsBase>(Configuration);
             services.AddServices(AppSettingsManager<AppSettingsBase>.Settings?.SwaggerTitle);
+            services.AddDomain();
+            services.AddRepository();
+
+            var connectionStringReader = Environment.GetEnvironmentVariable(EnvironmentVariable.ConnectionStringReader);
+            var connectionStringWriter = Environment.GetEnvironmentVariable(EnvironmentVariable.ConnectionStringWriter);
+            services.AddEntityFrameworkRepository(connectionStringReader, connectionStringWriter);
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApiVersionDescriptionProvider provider)

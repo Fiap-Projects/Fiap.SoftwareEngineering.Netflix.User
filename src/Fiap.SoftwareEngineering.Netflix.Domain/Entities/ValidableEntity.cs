@@ -1,5 +1,4 @@
-﻿using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions;
-using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions.Entities;
+﻿using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions.Entities;
 using FluentValidation;
 using FluentValidation.Results;
 

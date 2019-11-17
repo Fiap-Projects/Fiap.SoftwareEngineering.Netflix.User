@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework.Contexts
 {
-    public abstract class EntityFrameworkContextReaderWriter: EntityFrameworkContext, IContextWriter
+    public class EntityFrameworkContextWriter: EntityFrameworkContext, IContextWriter
     {
-        protected EntityFrameworkContextReaderWriter(DbContextOptions options) : base(options)
+        protected EntityFrameworkContextWriter(DbContextOptions<EntityFrameworkContextWriter> options) : base(options)
         {
         }
 

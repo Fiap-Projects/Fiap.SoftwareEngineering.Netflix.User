@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework.Contexts
 {
-    public abstract class EntityFrameworkContextReader : EntityFrameworkContext, IContextReader
+    public class EntityFrameworkContextReader : EntityFrameworkContext, IContextReader
     {
-        protected EntityFrameworkContextReader(DbContextOptions options) : base(options)
+        protected EntityFrameworkContextReader(DbContextOptions<EntityFrameworkContextReader> options) : base(options)
         {
         }
     }

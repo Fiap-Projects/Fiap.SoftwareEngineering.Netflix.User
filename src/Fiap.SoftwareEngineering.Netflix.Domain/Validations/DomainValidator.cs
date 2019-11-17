@@ -1,11 +1,10 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions;
-using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions.Entities;
+﻿using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions.Entities;
 using Fiap.SoftwareEngineering.Netflix.Domain.Abstractions.Validations;
 using Fiap.SoftwareEngineering.Netflix.Validation.Abstractions;
 using FluentValidation;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Fiap.SoftwareEngineering.Netflix.Domain.Validations
 {

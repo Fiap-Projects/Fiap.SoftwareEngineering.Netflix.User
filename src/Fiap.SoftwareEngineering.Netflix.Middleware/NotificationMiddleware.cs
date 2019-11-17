@@ -11,28 +11,28 @@ namespace Fiap.SoftwareEngineering.Netflix.Middleware
 {
     public class NotificationMiddleware
     {
-        private readonly RequestDelegate Next;
-        private readonly INotificationContext NotificationContext;
+        private readonly RequestDelegate _next;
+        private readonly INotificationContext _notificationContext;
 
         public NotificationMiddleware(RequestDelegate next, INotificationContext notificationContext)
         {
-            Next = next;
-            NotificationContext = notificationContext;
+            _next = next;
+            _notificationContext = notificationContext;
         }
 
         public async Task Invoke(HttpContext context)
         {
-            if (NotificationContext.HasNotifications)
+            if (_notificationContext.HasNotifications)
             {
                 context.Response.ContentType = ContentTypes.ApplicationJson;
                 context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
 
-                var notifications = JsonConvert.SerializeObject(NotificationContext.Notifications);
+                var notifications = JsonConvert.SerializeObject(_notificationContext.Notifications);
                 await context.Response.WriteAsync(notifications);
                 return;
             }
 
-            await Next(context);
+            await _next(context);
         }
     }
 }

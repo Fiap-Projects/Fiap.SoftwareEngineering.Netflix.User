@@ -5,11 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Domain\Fiap.SoftwareEngineering.Netflix.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DTOs\Query\" />
     <Folder Include="Mappers\" />
     <Folder Include="Validations\" />
   </ItemGroup>

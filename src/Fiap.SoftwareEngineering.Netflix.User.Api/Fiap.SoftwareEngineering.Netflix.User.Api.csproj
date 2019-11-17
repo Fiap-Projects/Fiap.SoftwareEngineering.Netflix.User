@@ -6,6 +6,7 @@
     <UserSecretsId>cc94c289-9af0-48a3-bb1d-1911a1babc63</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +21,8 @@
     <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Configuration\Fiap.SoftwareEngineering.Netflix.Configuration.csproj" />
     <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Domain\Fiap.SoftwareEngineering.Netflix.Domain.csproj" />
     <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Logging\Fiap.SoftwareEngineering.Netflix.Logging.csproj" />
+    <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework\Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework.csproj" />
+    <ProjectReference Include="..\Fiap.SoftwareEngineering.Netflix.User.Domain\Fiap.SoftwareEngineering.Netflix.User.Domain.csproj" />
   </ItemGroup>
 
 </Project>

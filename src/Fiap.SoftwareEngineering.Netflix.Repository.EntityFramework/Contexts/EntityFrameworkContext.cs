@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Fiap.SoftwareEngineering.Netflix.Repository.EntityFramework.Contexts
 {
-    public abstract class EntityFrameworkContext : DbContext, IContext
+    public class EntityFrameworkContext : DbContext, IContext
     {
         protected EntityFrameworkContext(DbContextOptions options) : base(options)
         {
